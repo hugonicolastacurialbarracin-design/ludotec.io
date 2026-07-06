@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LudoTec · Tablero Sudobik</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- CABECERA -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Logo LudoTec -->
+                <img src="sudobik_ludotec-Photoroom.png" alt="LudoTec" class="logo-img" />
+                <span class="logo-text">LudoTec</span>
+            </div>
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#producto">El Tablero</a></li>
+                    <li><a href="#juegos">Juegos</a></li>
+                    <li><a href="#piaget">Piaget</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HERO -->
+    <section id="inicio" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="highlight">Sudobik</span><br />
+                    El tablero que <strong>entrena la mente</strong>
+                </h1>
+                <p class="hero-sub">
+                    Un recurso lúdico-tecnológico con 9 botones y 5 juegos diseñado para desarrollar 
+                    <strong>memoria, atención y habilidades lógico-matemáticas</strong> en niños de 7 a 11 años, 
+                    basado en la teoría de Jean Piaget.
+                </p>
+                <div class="hero-actions">
+                    <a href="#producto" class="btn btn-primary">Explorar el tablero</a>
+                    <a href="#contacto" class="btn btn-secondary">Solicitar información</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="sudobik_logo-Photoroom.png" alt="Logo Sudobik" class="hero-logo" />
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PRODUCTO (TABLERO) -->
+    <section id="producto" class="section producto">
+        <div class="container">
+            <h2 class="section-title">El Tablero <span class="highlight">Sudobik</span></h2>
+            <div class="producto-grid">
+                <div class="producto-text">
+                    <p>
+                        <strong>Sudobik</strong> es un tablero interactivo de <strong>9 botones</strong> (3x3) 
+                        que combina la lógica de los números con dinámicas de juego. Cada botón representa un 
+                        número del 1 al 9. A través de <strong>5 juegos</strong> (Memoria, Suma, Resta, Multiplicación y División), 
+                        los niños ejercitan su capacidad de retención, atención sostenida y razonamiento matemático.
+                    </p>
+                    <ul class="producto-caracteristicas">
+                        <li>✅ 9 botones táctiles con números del 1 al 9</li>
+                        <li>✅ 5 modos de juego progresivos</li>
+                        <li>✅ Aplicación complementaria con seguimiento</li>
+                        <li>✅ Material resistente y atractivo</li>
+                        <li>✅ Guía didáctica para el docente</li>
+                    </ul>
+                </div>
+                <div class="producto-imagen">
+                    <!-- TABLERO INTERACTIVO -->
+                    <div class="tablero-container">
+                        <div class="tablero-grid" id="tableroGrid">
+                            <!-- Los botones se generan con JavaScript, pero los ponemos estáticamente por claridad -->
+                            <!-- 9 botones del 1 al 9 -->
+                        </div>
+                        <div class="tablero-panel" id="tableroPanel">
+                            <p>Número seleccionado: <span id="numeroSeleccionado">-</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN JUEGOS -->
+    <section id="juegos" class="section juegos">
+        <div class="container">
+            <h2 class="section-title">5 Juegos para <span class="highlight">aprender jugando</span></h2>
+            <div class="juegos-grid">
+                <div class="juego-card">
+                    <div class="juego-icon">🧠</div>
+                    <h3>Memoria</h3>
+                    <p>El niño debe recordar la secuencia de números que se iluminan y repetirla. Entrena la memoria a corto plazo y la atención.</p>
+                </div>
+                <div class="juego-card">
+                    <div class="juego-icon">➕</div>
+                    <h3>Suma</h3>
+                    <p>Se presentan dos números y el niño debe sumarlos mentalmente y presionar el resultado correcto en el tablero.</p>
+                </div>
+                <div class="juego-card">
+                    <div class="juego-icon">➖</div>
+                    <h3>Resta</h3>
+                    <p>Ejercicios de resta con números del 1 al 9, fomentando el cálculo mental y la agilidad.</p>
+                </div>
+                <div class="juego-card">
+                    <div class="juego-icon">✖️</div>
+                    <h3>Multiplicación</h3>
+                    <p>Tablas de multiplicar básicas. El niño selecciona el producto correcto entre las opciones del tablero.</p>
+                </div>
+                <div class="juego-card">
+                    <div class="juego-icon">➗</div>
+                    <h3>División</h3>
+                    <p>Divisiones exactas con números pequeños, reforzando la relación entre multiplicación y división.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PIAGET -->
+    <section id="piaget" class="section piaget">
+        <div class="container">
+            <h2 class="section-title">Fundamentado en <span class="highlight">Piaget</span></h2>
+            <div class="piaget-content">
+                <div class="piaget-text">
+                    <h3>Operaciones Concretas (7–11 años)</h3>
+                    <p>
+                        Según Jean Piaget, en esta etapa los niños desarrollan la capacidad de realizar operaciones lógicas 
+                        cuando están vinculadas a objetos concretos. <strong>Sudobik</strong> ofrece precisamente eso: 
+                        un tablero tangible con el que los niños pueden manipular números, experimentar y construir 
+                        su pensamiento matemático a través del juego.
+                    </p>
+                    <blockquote>
+                        “El juego es el trabajo del niño.” — Jean Piaget
+                    </blockquote>
+                </div>
+                <div class="piaget-icono">
+                    <span>🧒</span>
+                    <span>➕</span>
+                    <span>🧩</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN BENEFICIOS -->
+    <section id="beneficios" class="section beneficios">
+        <div class="container">
+            <h2 class="section-title">Beneficios para <span class="highlight">docentes</span></h2>
+            <div class="beneficios-grid">
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">🧠</div>
+                    <h3>Memoria y atención</h3>
+                    <p>Los juegos de memoria y secuencias fortalecen la retención y la concentración.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">🔢</div>
+                    <h3>Razonamiento lógico</h3>
+                    <p>Las operaciones matemáticas se integran en un contexto lúdico que motiva el pensamiento crítico.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">🤝</div>
+                    <h3>Aprendizaje cooperativo</h3>
+                    <p>Los juegos pueden realizarse en grupo, fomentando la discusión y el trabajo en equipo.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">📊</div>
+                    <h3>Seguimiento personalizado</h3>
+                    <p>La app asociada ofrece informes de progreso y sugerencias de intervención.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="section contacto">
+        <div class="container">
+            <h2 class="section-title">¿Quieres conocer <span class="highlight">Sudobik</span>?</h2>
+            <p class="contacto-sub">
+                Déjanos tus datos y te enviaremos una muestra digital y toda la información.
+            </p>
+            <form class="contacto-form" id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" placeholder="tucorreo@ejemplo.com" required />
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje (opcional)</label>
+                    <textarea id="mensaje" rows="3" placeholder="¿Qué te gustaría saber?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+            </form>
+            <div id="formFeedback" class="feedback-message"></div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 LudoTec · Diseño y creación de recursos lúdico-educativos.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Instagram">📸</a>
+                <a href="#" aria-label="YouTube">▶️</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
